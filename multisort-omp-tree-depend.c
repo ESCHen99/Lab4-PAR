@@ -31,35 +31,57 @@ void basicsort(long n, T data[n]);
 
 void basicmerge(long n, T left[n], T right[n], T result[n*2], long start, long length);
 
-void merge(long n, T left[n], T right[n], T result[n*2], long start, long length) {
+void merge(long n, T left[n], T right[n], T result[n*2], long start, long length, int depth) {
         if (length < MIN_MERGE_SIZE*2L) {
                 // Base case
 
-				#pragma omp task firstprivate(n) 
                 basicmerge(n, left, right, result, start, length);
+				
         } else {
                 // Recursive decomposition
-                merge(n, left, right, result, start, length/2);
-                merge(n, left, right, result, start + length/2, length/2);
+				
+				#pragma omp task firstprivate(n) final(depth>CUTOFF)  depend(in: left, right) depend(out: result[start])
+
+                merge(n, left, right, result, start, length/2, ++depth);
+            
+				#pragma omp task firstprivate(n) final(depth>CUTOFF) depend(in: left, right) depend(out: result[start+length/2])
+
+			    merge(n, left, right, result, start + length/2, length/2, depth);
+				
+#pragma omp taskwait				
         }
 }
 
-void multisort(long n, T data[n], T tmp[n]) {
+void multisort(long n, T data[n], T tmp[n], int depth) {
         if (n >= MIN_SORT_SIZE*4L) {
                 // Recursive decomposition
-                multisort(n/4L, &data[0], &tmp[0]);
-                multisort(n/4L, &data[n/4L], &tmp[n/4L]);
-                multisort(n/4L, &data[n/2L], &tmp[n/2L]);
-                multisort(n/4L, &data[3L*n/4L], &tmp[3L*n/4L]);
+               #pragma omp task firstprivate(n, depth) final(depth>CUTOFF) depend(in: data[0]) depend(out: data[0])
+			    multisort(n/4L, &data[0], &tmp[0], ++depth);
+				#pragma omp task firstprivate(n, depth) final(depth>CUTOFF) depend(in: data[n/4L]) depend(out: data[n/4L])
+
+                multisort(n/4L, &data[n/4L], &tmp[n/4L], depth);
+				#pragma omp task firstprivate(n, depth) final(depth>CUTOFF)  depend(in: data[n/2L]) depend(out: data[n/2L])
+
+                multisort(n/4L, &data[n/2L], &tmp[n/2L], depth);
+                #pragma omp task firstprivate(n, depth) final(depth>CUTOFF) depend(in: data[3L*n/4L]) depend(out: data[3L*n/4L])
+
+				multisort(n/4L, &data[3L*n/4L], &tmp[3L*n/4L], depth);				
 				
-				#pragma omp taskwait
-                merge(n/4L, &data[0], &data[n/4L], &tmp[0], 0, n/2L);
-                merge(n/4L, &data[n/2L], &data[3L*n/4L], &tmp[n/2L], 0, n/2L);
-				#pragma omp taskwait
-                merge(n/2L, &tmp[0], &tmp[n/2L], &data[0], 0, n);
+
+                #pragma omp task firstprivate(n, depth) final(depth>CUTOFF) depend(in: data[0], data[n/4L]) depend(out: tmp[0])
+
+				merge(n/4L, &data[0], &data[n/4L], &tmp[0], 0, n/2L, depth);
+                #pragma omp task firstprivate(n, depth) final(depth>CUTOFF)  depend(in: data[n/2L], data[3L*n/4L]) depend(out: tmp[n/2L])
+
+				merge(n/4L, &data[n/2L], &data[3L*n/4L], &tmp[n/2L], 0, n/2L, depth);
+				
+				#pragma omp task firstprivate(n, depth) final(depth>CUTOFF)  depend(in: tmp[0], tmp[n/2L]) depend(out: data[0])
+
+
+                merge(n/2L, &tmp[0], &tmp[n/2L], &data[0], 0, n, depth);
+				#pragma omp taskwait		
 	} else {
 		
-		#pragma omp task firstprivate(n) 
 		// Base case
 		basicsort(n, data);
 
@@ -146,7 +168,7 @@ int main(int argc, char **argv) {
 
    	#pragma omp parallel
 	#pragma omp single
-	multisort(N, data, tmp);
+	multisort(N, data, tmp, 0);
 
    	STOP_COUNT_TIME("Multisort execution time");
 

@@ -1,6 +1,5 @@
 for i in {1..10}
 do
-	echo $i
-	./multisort-omp-tree-depend
+	./$1 > /dev/null &
 done
 exit

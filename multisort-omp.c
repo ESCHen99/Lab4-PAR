@@ -90,7 +90,7 @@ void check_sorted(long n, T data[n])
    for (int i=1; i<n; i++)
       if (data[i-1] > data[i]) unsorted++;
    if (unsorted > 0)
-      printf ("\nERROR: data is NOT properly sorted. There are %d unordered positions\n\n",unsorted);
+      printf (stderr, "\nERROR: data is NOT properly sorted. There are %d unordered positions\n\n",unsorted);
    else {
 //      printf ("data IS ordered; ");
    }

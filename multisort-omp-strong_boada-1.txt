@@ -1,0 +1,385 @@
+Executing multisort sequentially
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+Initialization time in seconds: 0.848560
+Multisort execution time: 6.303787
+Check sorted data execution time: 0.015079
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+Initialization time in seconds: 0.849604
+Multisort execution time: 6.334843
+Check sorted data execution time: 0.015219
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+Initialization time in seconds: 0.847422
+Multisort execution time: 6.314950
+Check sorted data execution time: 0.015340
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =7.21000000000000000000
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =6.31786000000000000000
+
+
+Executing multisort-omp in parallel with 1 threads
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.820837
+Multisort execution time: 6.648935
+Check sorted data execution time: 0.015093
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.820321
+Multisort execution time: 6.692718
+Check sorted data execution time: 0.015392
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.820751
+Multisort execution time: 6.661838
+Check sorted data execution time: 0.015016
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =7.52666666666666666666
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =6.66783033333333333333
+
+
+Executing multisort-omp in parallel with 2 threads
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.819965
+Multisort execution time: 3.839629
+Check sorted data execution time: 0.016249
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.821316
+Multisort execution time: 3.887079
+Check sorted data execution time: 0.016681
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.824536
+Multisort execution time: 3.832451
+Check sorted data execution time: 0.029027
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =4.72333333333333333333
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =3.85305300000000000000
+
+
+Executing multisort-omp in parallel with 3 threads
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.820064
+Multisort execution time: 2.895745
+Check sorted data execution time: 0.016758
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.818260
+Multisort execution time: 2.901580
+Check sorted data execution time: 0.020682
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.819721
+Multisort execution time: 2.910528
+Check sorted data execution time: 0.016493
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =3.77000000000000000000
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =2.90261766666666666666
+
+
+Executing multisort-omp in parallel with 4 threads
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.821554
+Multisort execution time: 2.015636
+Check sorted data execution time: 0.020608
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.822053
+Multisort execution time: 2.022357
+Check sorted data execution time: 0.016803
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.821020
+Multisort execution time: 2.016407
+Check sorted data execution time: 0.017050
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =2.88666666666666666666
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =2.01813333333333333333
+
+
+Executing multisort-omp in parallel with 5 threads
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.821722
+Multisort execution time: 1.868499
+Check sorted data execution time: 0.018810
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.821878
+Multisort execution time: 1.810060
+Check sorted data execution time: 0.019939
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.815784
+Multisort execution time: 1.854298
+Check sorted data execution time: 0.017019
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =2.71000000000000000000
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =1.84428566666666666666
+
+
+Executing multisort-omp in parallel with 6 threads
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.821132
+Multisort execution time: 1.723137
+Check sorted data execution time: 0.020406
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.820715
+Multisort execution time: 1.713377
+Check sorted data execution time: 0.017805
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.820603
+Multisort execution time: 1.706408
+Check sorted data execution time: 0.018852
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =2.58000000000000000000
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =1.71430733333333333333
+
+
+Executing multisort-omp in parallel with 7 threads
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.821999
+Multisort execution time: 1.600084
+Check sorted data execution time: 0.017913
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.817990
+Multisort execution time: 1.601781
+Check sorted data execution time: 0.019762
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.819914
+Multisort execution time: 1.630923
+Check sorted data execution time: 0.019680
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =2.51666666666666666666
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =1.61092933333333333333
+
+
+Executing multisort-omp in parallel with 8 threads
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.820973
+Multisort execution time: 1.554574
+Check sorted data execution time: 0.019741
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.821004
+Multisort execution time: 1.525065
+Check sorted data execution time: 0.018495
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.815696
+Multisort execution time: 1.552178
+Check sorted data execution time: 0.023475
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =2.41333333333333333333
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =1.54393900000000000000
+
+
+Executing multisort-omp in parallel with 9 threads
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.820305
+Multisort execution time: 1.504768
+Check sorted data execution time: 0.019257
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.821009
+Multisort execution time: 1.544010
+Check sorted data execution time: 0.019647
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.817257
+Multisort execution time: 1.499485
+Check sorted data execution time: 0.018108
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =2.38000000000000000000
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =1.51608766666666666666
+
+
+Executing multisort-omp in parallel with 10 threads
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.819433
+Multisort execution time: 1.494564
+Check sorted data execution time: 0.019912
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.815340
+Multisort execution time: 1.488627
+Check sorted data execution time: 0.018728
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.821396
+Multisort execution time: 1.564761
+Check sorted data execution time: 0.020150
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =2.38000000000000000000
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =1.51598400000000000000
+
+
+Executing multisort-omp in parallel with 11 threads
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.822927
+Multisort execution time: 1.556430
+Check sorted data execution time: 0.019241
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.821388
+Multisort execution time: 1.473461
+Check sorted data execution time: 0.019975
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.820351
+Multisort execution time: 1.473648
+Check sorted data execution time: 0.019982
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =2.37333333333333333333
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =1.50117966666666666666
+
+
+Executing multisort-omp in parallel with 12 threads
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.821122
+Multisort execution time: 1.546145
+Check sorted data execution time: 0.023384
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.820301
+Multisort execution time: 1.557742
+Check sorted data execution time: 0.020614
+Multisort program finished
+
+
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.820004
+Multisort execution time: 1.494180
+Check sorted data execution time: 0.023088
+Multisort program finished
+
+
+ELAPSED TIME AVERAGE OF 3 EXECUTIONS =2.40666666666666666666
+MULTISORT TIME AVERAGE OF 3 EXECUTIONS =1.53268900000000000000

@@ -1,0 +1,5 @@
+Arguments (Kelements): N=32768, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+Initialization time in seconds: 0.850500
+Multisort execution time: 6.358483
+Check sorted data execution time: 0.015085
+Multisort program finished

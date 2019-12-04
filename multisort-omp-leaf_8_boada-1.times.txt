@@ -1,0 +1,35 @@
+Welcome to Extrae 3.5.4
+Extrae: Detected GOMP version is 4.5
+Extrae: Detected and hooked OpenMP runtime: [Intel KMPC] [GNU GOMP]
+Extrae: OMP_NUM_THREADS set to 8
+Extrae: Parsing the configuration file (./extrae.xml) begins
+Extrae: Tracing package is located on $EXTRAE_HOME
+Extrae: Generating intermediate files for Paraver traces.
+Extrae: OpenMP routines will collect HW counters information.
+Extrae: Tracing buffer can hold 500000 events
+Extrae: Circular buffer disabled.
+Extrae: Dynamic memory instrumentation is disabled.
+Extrae: Basic I/O memory instrumentation is disabled.
+Extrae: System calls instrumentation is disabled.
+Extrae: Parsing the configuration file (./extrae.xml) has ended
+Extrae: Intermediate traces will be stored in /scratch/nas/1/par2104/lab4.3
+Extrae: Tracing mode is set to: Detail.
+Extrae: Successfully initiated with 1 tasks and 8 threads
+
+Arguments (Kelements): N=8192, MIN_SORT_SIZE=1, MIN_MERGE_SIZE=1
+                       CUTOFF=4
+Initialization time in seconds: 0.208112
+Multisort execution time: 0.407829
+Check sorted data execution time: 0.004078
+Multisort program finished
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2104/lab4.3/set-0/TRACE@boada-1.0000021181000000000000.mpit
+Extrae: Intermediate raw sym file created : /scratch/nas/1/par2104/lab4.3/set-0/TRACE@boada-1.0000021181000000000000.sym
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2104/lab4.3/set-0/TRACE@boada-1.0000021181000000000001.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2104/lab4.3/set-0/TRACE@boada-1.0000021181000000000002.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2104/lab4.3/set-0/TRACE@boada-1.0000021181000000000003.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2104/lab4.3/set-0/TRACE@boada-1.0000021181000000000004.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2104/lab4.3/set-0/TRACE@boada-1.0000021181000000000005.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2104/lab4.3/set-0/TRACE@boada-1.0000021181000000000006.mpit
+Extrae: Intermediate raw trace file created : /scratch/nas/1/par2104/lab4.3/set-0/TRACE@boada-1.0000021181000000000007.mpit
+Extrae: Deallocating memory.
+Extrae: Application has ended. Tracing has been terminated.

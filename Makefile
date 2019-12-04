@@ -13,7 +13,7 @@ TAREADORCC = tar-clang
 TAREADOR_FLAGS = -tareador-lite 
 #TAREADOR_FLAGS = -tareador-lite -isystem/scratch/nas/1/par0/Soft
 
-TARGETS	= multisort multisort-tareador multisort-omp multisort-omp-tree multisort-omp-tree-final multisort-omp-tree-depend
+TARGETS	= multisort multisort-tareador multisort-omp multisort-omp-tree multisort-omp-tree-final multisort-omp-tree-depend multisort-omp-leaf
 all: $(TARGETS)
 
 kernels.o: kernels.c 
@@ -28,6 +28,9 @@ multisort-tareador: multisort-tareador.c kernels-tareador.c
 multisort-omp: multisort-omp.c  kernels.o
 	$(OMPC) $(CFLAGS) $(OPT2) $(OPENMP) $+ $(LFLAGS) -o $@ 
 
+
+multisort-omp-leaf: multisort-omp-leaf.c  kernels.o
+	$(OMPC) $(CFLAGS) $(OPT2) $(OPENMP) $+ $(LFLAGS) -o $@ 
 
 multisort-omp-tree: multisort-omp-tree.c  kernels.o
 	$(OMPC) $(CFLAGS) $(OPT2) $(OPENMP) $+ $(LFLAGS) -o $@ 
